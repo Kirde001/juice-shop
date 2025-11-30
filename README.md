@@ -1,3 +1,5 @@
+
+
 # NEW AUTH FEATURE - ISO 27001
 We have refactored the legacy authentication logic. 
 New components: lib/secure-auth-provider - drop-in replacement for our current auth verification., lib/auth-utils-core - low-level utilities required by the provider.
