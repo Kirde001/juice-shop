@@ -1,4 +1,19 @@
-steps:
+name: sec audit
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    types: [ opened, synchronize ]
+
+jobs:
+  audit_job:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    
+    steps:
     - name: Checkout Code
       uses: actions/checkout@v3
 
