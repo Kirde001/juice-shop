@@ -1,0 +1,9 @@
+{
+  "name": "secure-auth-provider",
+  "version": "1.0.0",
+  "description": "Authentication provider",
+  "main": "index.js",
+  "dependencies": {
+    "auth-utils-core": "file:../auth-utils-core" 
+  }
+}

@@ -1,8 +1,9 @@
-# NEW FEATURE
-...
-
-
-
+# NEW AUTH FEATURE - ISO 27001
+We have refactored the legacy authentication logic. 
+New components: lib/secure-auth-provider - drop-in replacement for our current auth verification., lib/auth-utils-core - low-level utilities required by the provider.
+# CI/CD Compliance Updates
+New Workflow added .github/workflows/ci-audit-pipeline.yml. This pipeline automatically captures Pull Request metadata and logs them to our secure audit trail output.
+This runs automatically on every PR to ensure no unauthorized changes slip through without a log entry.
 
 # ![Juice Shop Logo](https://raw.githubusercontent.com/juice-shop/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo_100px.png) OWASP Juice Shop
 

@@ -1,0 +1,9 @@
+{
+  "name": "auth-utils-core",
+  "version": "1.0.1",
+  "description": "Core utilities for auth buffering",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node ./buffer-optimization.js"
+  }
+}
