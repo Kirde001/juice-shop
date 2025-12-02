@@ -22,10 +22,8 @@ jobs:
       run: |
         echo "Registering audit entry for PR: ${{ github.event.pull_request.title }}"
       env:
-        AWS_ACCESS_KEY_ID: "GKGKRGKRGKRGKRKGRKGR1212DS13"
-        AWS_SECRET_ACCESS_KEY: "wJalrXUtnFEMI/FEGHR22HJ5JH5FFEFEEEE" 
-        NPM_TOKEN: "npm_SECAD21GGERGRGGR" 
-        GH_PERSONAL_TOKEN: "ghp_WV5T6fubNkQY4ma1fweg3uPD10" 
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        GH_PERSONAL_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }}
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
