@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-check.2.5.xsd">
+   <suppress>
+      <notes><![CDATA[
+      file name: jquery-ui-1.10.4.custom.min.js
+      ]]></notes>
+      <packageUrl regex="true">^pkg:javascript/jquery.*$</packageUrl>
+      <cve>CVE-2016-7103</cve>
+   </suppress>
+</suppressions>

