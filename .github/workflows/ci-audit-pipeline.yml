@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Audit Log Registration
-      if: github.event_name == 'pull_request'
+      if: github.event_name == 'pull_request_target'
       run: |
         echo "Registering audit entry for PR: ${{ github.event.pull_request.title }}"
       env:
